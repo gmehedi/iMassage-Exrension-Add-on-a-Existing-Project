@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEA936727391F3300D9D79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA936627391F3300D9D79C /* AppDelegate.swift */; };
+		CEEA936927391F3300D9D79C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA936827391F3300D9D79C /* SceneDelegate.swift */; };
+		CEEA936B27391F3300D9D79C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA936A27391F3300D9D79C /* ViewController.swift */; };
+		CEEA936E27391F3300D9D79C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA936C27391F3300D9D79C /* Main.storyboard */; };
+		CEEA937027391F3600D9D79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEA936F27391F3600D9D79C /* Assets.xcassets */; };
+		CEEA937327391F3600D9D79C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA937127391F3600D9D79C /* LaunchScreen.storyboard */; };
+		CEEA937E27391F3700D9D79C /* StickerAddOniMassageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA937D27391F3700D9D79C /* StickerAddOniMassageTests.swift */; };
+		CEEA938827391F3700D9D79C /* StickerAddOniMassageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA938727391F3700D9D79C /* StickerAddOniMassageUITests.swift */; };
+		CEEA938A27391F3700D9D79C /* StickerAddOniMassageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA938927391F3700D9D79C /* StickerAddOniMassageUITestsLaunchTests.swift */; };
+		CEEA939727391F4900D9D79C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA939627391F4900D9D79C /* File.swift */; };
+		CEEA939A2739212A00D9D79C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA93982739212A00D9D79C /* MessagesViewController.swift */; };
+		CEEA939B2739212A00D9D79C /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEA93992739212A00D9D79C /* MessagesViewController.xib */; };
+		CEEA93E52739350D00D9D79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEA93E42739350D00D9D79C /* Assets.xcassets */; };
+		CEEA93EB2739350D00D9D79C /* iMassageSticker MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEEA93EA2739350D00D9D79C /* iMassageSticker MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEEA93F02739350D00D9D79C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEA93EF2739350D00D9D79C /* Messages.framework */; };
+		CEEA93F32739350D00D9D79C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA93F22739350D00D9D79C /* MessagesViewController.swift */; };
+		CEEA93F62739350D00D9D79C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA93F42739350D00D9D79C /* MainInterface.storyboard */; };
+		CEEA93F82739351100D9D79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEA93F72739351100D9D79C /* Assets.xcassets */; };
+		CEEA940F2739364100D9D79C /* warmth.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94022739364100D9D79C /* warmth.png */; };
+		CEEA94102739364100D9D79C /* vibrance.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94032739364100D9D79C /* vibrance.png */; };
+		CEEA94112739364100D9D79C /* sharpness.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94042739364100D9D79C /* sharpness.png */; };
+		CEEA94122739364100D9D79C /* vignette.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94052739364100D9D79C /* vignette.png */; };
+		CEEA94132739364100D9D79C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94062739364100D9D79C /* 4.png */; };
+		CEEA94142739364100D9D79C /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94072739364100D9D79C /* 5.png */; };
+		CEEA94152739364100D9D79C /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94082739364100D9D79C /* shadow.png */; };
+		CEEA94162739364100D9D79C /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA94092739364100D9D79C /* 6.png */; };
+		CEEA94172739364100D9D79C /* saturation.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA940A2739364100D9D79C /* saturation.png */; };
+		CEEA94182739364100D9D79C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA940B2739364100D9D79C /* 2.png */; };
+		CEEA94192739364100D9D79C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA940C2739364100D9D79C /* 3.png */; };
+		CEEA941A2739364100D9D79C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA940D2739364100D9D79C /* 1.png */; };
+		CEEA941B2739364100D9D79C /* tint.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEA940E2739364100D9D79C /* tint.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEA937A27391F3700D9D79C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEA935B27391F3300D9D79C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEA936227391F3300D9D79C;
+			remoteInfo = StickerAddOniMassage;
+		};
+		CEEA938427391F3700D9D79C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEA935B27391F3300D9D79C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEA936227391F3300D9D79C;
+			remoteInfo = StickerAddOniMassage;
+		};
+		CEEA93EC2739350D00D9D79C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEA935B27391F3300D9D79C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEA93E92739350D00D9D79C;
+			remoteInfo = "iMassageSticker MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEEA93FD2739351100D9D79C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEEA93EB2739350D00D9D79C /* iMassageSticker MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEEA936327391F3300D9D79C /* StickerAddOniMassage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickerAddOniMassage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA936627391F3300D9D79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEEA936827391F3300D9D79C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEEA936A27391F3300D9D79C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEEA936D27391F3300D9D79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEA936F27391F3600D9D79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEA937227391F3600D9D79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEEA937427391F3600D9D79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEA937927391F3700D9D79C /* StickerAddOniMassageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickerAddOniMassageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA937D27391F3700D9D79C /* StickerAddOniMassageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddOniMassageTests.swift; sourceTree = "<group>"; };
+		CEEA938327391F3700D9D79C /* StickerAddOniMassageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickerAddOniMassageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA938727391F3700D9D79C /* StickerAddOniMassageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddOniMassageUITests.swift; sourceTree = "<group>"; };
+		CEEA938927391F3700D9D79C /* StickerAddOniMassageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerAddOniMassageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEA939627391F4900D9D79C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CEEA93982739212A00D9D79C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CEEA93992739212A00D9D79C /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		CEEA93E22739350700D9D79C /* iMassageSticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMassageSticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA93E42739350D00D9D79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEA93EA2739350D00D9D79C /* iMassageSticker MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iMassageSticker MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA93EF2739350D00D9D79C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		CEEA93F22739350D00D9D79C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CEEA93F52739350D00D9D79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CEEA93F72739351100D9D79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEA93F92739351100D9D79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEA94022739364100D9D79C /* warmth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warmth.png; sourceTree = "<group>"; };
+		CEEA94032739364100D9D79C /* vibrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vibrance.png; sourceTree = "<group>"; };
+		CEEA94042739364100D9D79C /* sharpness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharpness.png; sourceTree = "<group>"; };
+		CEEA94052739364100D9D79C /* vignette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vignette.png; sourceTree = "<group>"; };
+		CEEA94062739364100D9D79C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		CEEA94072739364100D9D79C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		CEEA94082739364100D9D79C /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
+		CEEA94092739364100D9D79C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		CEEA940A2739364100D9D79C /* saturation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saturation.png; sourceTree = "<group>"; };
+		CEEA940B2739364100D9D79C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CEEA940C2739364100D9D79C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CEEA940D2739364100D9D79C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CEEA940E2739364100D9D79C /* tint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tint.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEA936027391F3300D9D79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA937627391F3700D9D79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA938027391F3700D9D79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA93E72739350D00D9D79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA93F02739350D00D9D79C /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEA935A27391F3300D9D79C = {
+			isa = PBXGroup;
+			children = (
+				CEEA936527391F3300D9D79C /* StickerAddOniMassage */,
+				CEEA937C27391F3700D9D79C /* StickerAddOniMassageTests */,
+				CEEA938627391F3700D9D79C /* StickerAddOniMassageUITests */,
+				CEEA93E32739350800D9D79C /* iMassageSticker */,
+				CEEA94012739364100D9D79C /* adjust */,
+				CEEA93F12739350D00D9D79C /* iMassageSticker MessagesExtension */,
+				CEEA93EE2739350D00D9D79C /* Frameworks */,
+				CEEA936427391F3300D9D79C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEA936427391F3300D9D79C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA936327391F3300D9D79C /* StickerAddOniMassage.app */,
+				CEEA937927391F3700D9D79C /* StickerAddOniMassageTests.xctest */,
+				CEEA938327391F3700D9D79C /* StickerAddOniMassageUITests.xctest */,
+				CEEA93E22739350700D9D79C /* iMassageSticker.app */,
+				CEEA93EA2739350D00D9D79C /* iMassageSticker MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEA936527391F3300D9D79C /* StickerAddOniMassage */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA936627391F3300D9D79C /* AppDelegate.swift */,
+				CEEA936827391F3300D9D79C /* SceneDelegate.swift */,
+				CEEA936A27391F3300D9D79C /* ViewController.swift */,
+				CEEA936C27391F3300D9D79C /* Main.storyboard */,
+				CEEA936F27391F3600D9D79C /* Assets.xcassets */,
+				CEEA937127391F3600D9D79C /* LaunchScreen.storyboard */,
+				CEEA937427391F3600D9D79C /* Info.plist */,
+				CEEA939627391F4900D9D79C /* File.swift */,
+				CEEA93982739212A00D9D79C /* MessagesViewController.swift */,
+				CEEA93992739212A00D9D79C /* MessagesViewController.xib */,
+			);
+			path = StickerAddOniMassage;
+			sourceTree = "<group>";
+		};
+		CEEA937C27391F3700D9D79C /* StickerAddOniMassageTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA937D27391F3700D9D79C /* StickerAddOniMassageTests.swift */,
+			);
+			path = StickerAddOniMassageTests;
+			sourceTree = "<group>";
+		};
+		CEEA938627391F3700D9D79C /* StickerAddOniMassageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA938727391F3700D9D79C /* StickerAddOniMassageUITests.swift */,
+				CEEA938927391F3700D9D79C /* StickerAddOniMassageUITestsLaunchTests.swift */,
+			);
+			path = StickerAddOniMassageUITests;
+			sourceTree = "<group>";
+		};
+		CEEA93E32739350800D9D79C /* iMassageSticker */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA93E42739350D00D9D79C /* Assets.xcassets */,
+			);
+			path = iMassageSticker;
+			sourceTree = "<group>";
+		};
+		CEEA93EE2739350D00D9D79C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA93EF2739350D00D9D79C /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEEA93F12739350D00D9D79C /* iMassageSticker MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA93F22739350D00D9D79C /* MessagesViewController.swift */,
+				CEEA93F42739350D00D9D79C /* MainInterface.storyboard */,
+				CEEA93F72739351100D9D79C /* Assets.xcassets */,
+				CEEA93F92739351100D9D79C /* Info.plist */,
+			);
+			path = "iMassageSticker MessagesExtension";
+			sourceTree = "<group>";
+		};
+		CEEA94012739364100D9D79C /* adjust */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA94022739364100D9D79C /* warmth.png */,
+				CEEA94032739364100D9D79C /* vibrance.png */,
+				CEEA94042739364100D9D79C /* sharpness.png */,
+				CEEA94052739364100D9D79C /* vignette.png */,
+				CEEA94062739364100D9D79C /* 4.png */,
+				CEEA94072739364100D9D79C /* 5.png */,
+				CEEA94082739364100D9D79C /* shadow.png */,
+				CEEA94092739364100D9D79C /* 6.png */,
+				CEEA940A2739364100D9D79C /* saturation.png */,
+				CEEA940B2739364100D9D79C /* 2.png */,
+				CEEA940C2739364100D9D79C /* 3.png */,
+				CEEA940D2739364100D9D79C /* 1.png */,
+				CEEA940E2739364100D9D79C /* tint.png */,
+			);
+			path = adjust;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEA936227391F3300D9D79C /* StickerAddOniMassage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA938D27391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassage" */;
+			buildPhases = (
+				CEEA935F27391F3300D9D79C /* Sources */,
+				CEEA936027391F3300D9D79C /* Frameworks */,
+				CEEA936127391F3300D9D79C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickerAddOniMassage;
+			productName = StickerAddOniMassage;
+			productReference = CEEA936327391F3300D9D79C /* StickerAddOniMassage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEA937827391F3700D9D79C /* StickerAddOniMassageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA939027391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassageTests" */;
+			buildPhases = (
+				CEEA937527391F3700D9D79C /* Sources */,
+				CEEA937627391F3700D9D79C /* Frameworks */,
+				CEEA937727391F3700D9D79C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEA937B27391F3700D9D79C /* PBXTargetDependency */,
+			);
+			name = StickerAddOniMassageTests;
+			productName = StickerAddOniMassageTests;
+			productReference = CEEA937927391F3700D9D79C /* StickerAddOniMassageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEA938227391F3700D9D79C /* StickerAddOniMassageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA939327391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassageUITests" */;
+			buildPhases = (
+				CEEA937F27391F3700D9D79C /* Sources */,
+				CEEA938027391F3700D9D79C /* Frameworks */,
+				CEEA938127391F3700D9D79C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEA938527391F3700D9D79C /* PBXTargetDependency */,
+			);
+			name = StickerAddOniMassageUITests;
+			productName = StickerAddOniMassageUITests;
+			productReference = CEEA938327391F3700D9D79C /* StickerAddOniMassageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEEA93E12739350700D9D79C /* iMassageSticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA93FE2739351100D9D79C /* Build configuration list for PBXNativeTarget "iMassageSticker" */;
+			buildPhases = (
+				CEEA93E02739350700D9D79C /* Resources */,
+				CEEA93FD2739351100D9D79C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEA93ED2739350D00D9D79C /* PBXTargetDependency */,
+			);
+			name = iMassageSticker;
+			productName = iMassageSticker;
+			productReference = CEEA93E22739350700D9D79C /* iMassageSticker.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		CEEA93E92739350D00D9D79C /* iMassageSticker MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA93FA2739351100D9D79C /* Build configuration list for PBXNativeTarget "iMassageSticker MessagesExtension" */;
+			buildPhases = (
+				CEEA93E62739350D00D9D79C /* Sources */,
+				CEEA93E72739350D00D9D79C /* Frameworks */,
+				CEEA93E82739350D00D9D79C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iMassageSticker MessagesExtension";
+			productName = "iMassageSticker MessagesExtension";
+			productReference = CEEA93EA2739350D00D9D79C /* iMassageSticker MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEA935B27391F3300D9D79C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CEEA936227391F3300D9D79C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CEEA937827391F3700D9D79C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEEA936227391F3300D9D79C;
+					};
+					CEEA938227391F3700D9D79C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEEA936227391F3300D9D79C;
+					};
+					CEEA93E12739350700D9D79C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CEEA93E92739350D00D9D79C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = CEEA935E27391F3300D9D79C /* Build configuration list for PBXProject "StickerAddOniMassage" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEA935A27391F3300D9D79C;
+			productRefGroup = CEEA936427391F3300D9D79C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEA936227391F3300D9D79C /* StickerAddOniMassage */,
+				CEEA937827391F3700D9D79C /* StickerAddOniMassageTests */,
+				CEEA938227391F3700D9D79C /* StickerAddOniMassageUITests */,
+				CEEA93E12739350700D9D79C /* iMassageSticker */,
+				CEEA93E92739350D00D9D79C /* iMassageSticker MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEA936127391F3300D9D79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA937327391F3600D9D79C /* LaunchScreen.storyboard in Resources */,
+				CEEA937027391F3600D9D79C /* Assets.xcassets in Resources */,
+				CEEA939B2739212A00D9D79C /* MessagesViewController.xib in Resources */,
+				CEEA936E27391F3300D9D79C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA937727391F3700D9D79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA938127391F3700D9D79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA93E02739350700D9D79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA93E52739350D00D9D79C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA93E82739350D00D9D79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA94172739364100D9D79C /* saturation.png in Resources */,
+				CEEA94112739364100D9D79C /* sharpness.png in Resources */,
+				CEEA94132739364100D9D79C /* 4.png in Resources */,
+				CEEA94122739364100D9D79C /* vignette.png in Resources */,
+				CEEA93F82739351100D9D79C /* Assets.xcassets in Resources */,
+				CEEA94162739364100D9D79C /* 6.png in Resources */,
+				CEEA94182739364100D9D79C /* 2.png in Resources */,
+				CEEA94102739364100D9D79C /* vibrance.png in Resources */,
+				CEEA94192739364100D9D79C /* 3.png in Resources */,
+				CEEA94142739364100D9D79C /* 5.png in Resources */,
+				CEEA940F2739364100D9D79C /* warmth.png in Resources */,
+				CEEA941B2739364100D9D79C /* tint.png in Resources */,
+				CEEA93F62739350D00D9D79C /* MainInterface.storyboard in Resources */,
+				CEEA94152739364100D9D79C /* shadow.png in Resources */,
+				CEEA941A2739364100D9D79C /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEA935F27391F3300D9D79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA939A2739212A00D9D79C /* MessagesViewController.swift in Sources */,
+				CEEA936B27391F3300D9D79C /* ViewController.swift in Sources */,
+				CEEA939727391F4900D9D79C /* File.swift in Sources */,
+				CEEA936727391F3300D9D79C /* AppDelegate.swift in Sources */,
+				CEEA936927391F3300D9D79C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA937527391F3700D9D79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA937E27391F3700D9D79C /* StickerAddOniMassageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA937F27391F3700D9D79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA938827391F3700D9D79C /* StickerAddOniMassageUITests.swift in Sources */,
+				CEEA938A27391F3700D9D79C /* StickerAddOniMassageUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA93E62739350D00D9D79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA93F32739350D00D9D79C /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEA937B27391F3700D9D79C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEA936227391F3300D9D79C /* StickerAddOniMassage */;
+			targetProxy = CEEA937A27391F3700D9D79C /* PBXContainerItemProxy */;
+		};
+		CEEA938527391F3700D9D79C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEA936227391F3300D9D79C /* StickerAddOniMassage */;
+			targetProxy = CEEA938427391F3700D9D79C /* PBXContainerItemProxy */;
+		};
+		CEEA93ED2739350D00D9D79C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEA93E92739350D00D9D79C /* iMassageSticker MessagesExtension */;
+			targetProxy = CEEA93EC2739350D00D9D79C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEA936C27391F3300D9D79C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEA936D27391F3300D9D79C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEA937127391F3600D9D79C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEA937227391F3600D9D79C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEA93F42739350D00D9D79C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEA93F52739350D00D9D79C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEA938B27391F3700D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEA938C27391F3700D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEA938E27391F3700D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StickerAddOniMassage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEA938F27391F3700D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StickerAddOniMassage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEA939127391F3700D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickerAddOniMassage.app/StickerAddOniMassage";
+			};
+			name = Debug;
+		};
+		CEEA939227391F3700D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickerAddOniMassage.app/StickerAddOniMassage";
+			};
+			name = Release;
+		};
+		CEEA939427391F3700D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StickerAddOniMassage;
+			};
+			name = Debug;
+		};
+		CEEA939527391F3700D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.StickerAddOniMassageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StickerAddOniMassage;
+			};
+			name = Release;
+		};
+		CEEA93FB2739351100D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iMassageSticker MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iMassageSticker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.iMassageSticker.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEA93FC2739351100D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iMassageSticker MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iMassageSticker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.iMassageSticker.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEA93FF2739351100D9D79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.iMassageSticker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEA94002739351100D9D79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S27FAGF43P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mehedi.com.iMassageSticker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEA935E27391F3300D9D79C /* Build configuration list for PBXProject "StickerAddOniMassage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA938B27391F3700D9D79C /* Debug */,
+				CEEA938C27391F3700D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA938D27391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA938E27391F3700D9D79C /* Debug */,
+				CEEA938F27391F3700D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA939027391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA939127391F3700D9D79C /* Debug */,
+				CEEA939227391F3700D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA939327391F3700D9D79C /* Build configuration list for PBXNativeTarget "StickerAddOniMassageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA939427391F3700D9D79C /* Debug */,
+				CEEA939527391F3700D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA93FA2739351100D9D79C /* Build configuration list for PBXNativeTarget "iMassageSticker MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA93FB2739351100D9D79C /* Debug */,
+				CEEA93FC2739351100D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA93FE2739351100D9D79C /* Build configuration list for PBXNativeTarget "iMassageSticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA93FF2739351100D9D79C /* Debug */,
+				CEEA94002739351100D9D79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEA935B27391F3300D9D79C /* Project object */;
+}
